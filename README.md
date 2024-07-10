@@ -1,1 +1,1 @@
-# pdf--tools
+# pdf-tools
