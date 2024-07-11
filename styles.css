@@ -1,0 +1,108 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #6a0572, #8e44ad);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: #fff;
+    color: #333;
+    font-size: 1em;
+    outline: none;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background: #8e44ad;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #6a0572;
+}
+
+#imagePreview {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#imagePreview img {
+    max-width: 100px;
+    margin: 5px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+#downloadLink {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #8e44ad;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    input[type="file"] {
+        font-size: 0.9em;
+    }
+
+    button, #downloadLink {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
